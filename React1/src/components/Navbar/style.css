@@ -1,0 +1,21 @@
+.mynav{
+    height:  96px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color:azure;
+}
+
+.mynav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    list-style-type: none;
+}
+
+.mynav ul li{
+   margin-right: 40px; 
+}

@@ -1,0 +1,6 @@
+
+const MyCard = (props) => {
+    (
+        return
+    )
+}
