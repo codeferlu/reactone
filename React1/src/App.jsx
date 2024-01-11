@@ -1,3 +1,4 @@
+// App.jsx
 import React from 'react';
 import Header from './components/Header';
 import MyCard from './components/MyCard';
@@ -8,12 +9,20 @@ const App = () => {
     <div>
       <Header title="Adopta un perrito" />
 
-      <div className="container">
-        {/* Agrega varios componentes MyCard con diferentes props */}
-        <MyCard imageUrl="url_imagen_1" name="Perrito 1" description="Descripción del perrito 1" />
-        <MyCard imageUrl="url_imagen_2" name="Perrito 2" description="Descripción del perrito 2" />
-        {/* Agrega más tarjetas según sea necesario */}
-      </div>
+      {/* Renderizar varios MyCard */}
+      <MyCard
+        imageUrl="URL_DE_LA_IMAGEN"
+        name="Nombre del Perrito 1"
+        description="Descripción del Perrito 1"
+      />
+
+      <MyCard
+        imageUrl="URL_DE_LA_IMAGEN"
+        name="Nombre del Perrito 2"
+        description="Descripción del Perrito 2"
+      />
+
+      {/* Agregar más MyCard según sea necesario */}
 
       <Footer />
     </div>
