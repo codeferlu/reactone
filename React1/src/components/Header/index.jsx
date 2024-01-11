@@ -1,12 +1,11 @@
-import './style.css'
+import React from 'react';
 
-const Header = (props) => {
-return (
-    <header className="my-header">
-        <h1>{props.titlenav}</h1>
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
     </header>
-)
+  );
+};
 
-}
-
-export default Header
+export default Header;

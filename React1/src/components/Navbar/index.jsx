@@ -3,9 +3,7 @@ const Navbar = (props) => {
     return (
         <nav className='mynav'>
             <ul>
-                {
-                    props.links.map(link)   
-                }
+             
             </ul>
         </nav>
     )

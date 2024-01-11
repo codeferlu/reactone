@@ -1,11 +1,11 @@
-import './style.css'
+import React from 'react';
 
-const Footer = (props) => {
-    return (
-        <footer className="my-footer">
-            <p>Hola desde Footer y mañana es {props.day}</p>
-        </footer>
-    )
-}
+const Footer = () => {
+  return (
+    <footer>
+      <p>Breve descripción de la galería de imágenes.</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

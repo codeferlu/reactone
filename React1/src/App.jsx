@@ -1,17 +1,23 @@
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import React from 'react';
+import Header from './Header';
+import MyCard from './MyCard';
+import Footer from './Footer';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Navbar />
-      <Header titlenav="Adopta un perrito"/>
-      <Footer day="Martes"/>
-    </>
-  )
-}
+    <div>
+      <Header title="Adopta un perrito" />
 
-export default App
+      <div className="container">
+        {/* Agrega varios componentes MyCard con diferentes props */}
+        <MyCard imageUrl="url_imagen_1" name="Perrito 1" description="Descripción del perrito 1" />
+        <MyCard imageUrl="url_imagen_2" name="Perrito 2" description="Descripción del perrito 2" />
+        {/* Agrega más tarjetas según sea necesario */}
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
